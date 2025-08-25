@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Typekit font -->
     <!-- Unable to download one since the fonts are applied differently in old versions -->
+
     <!-- html5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 
     <!--[if lt IE 9]>
@@ -25,14 +29,58 @@
     <![endif]-->
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
-<body>
-    <header>
 
+<body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <!-- NAVBAR -->
+        <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bootstrap to WordPress"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
+    
     <!-- HERO -->
-    <section>
+    <section >
 
     </section>
 
@@ -50,12 +98,12 @@
     <section>
 
     </section>
-    
+
     <!-- COURSE FEATURES -->
     <section>
 
     </section>
-    
+
     <!-- PROJECTS FEATURES -->
     <section>
 
@@ -75,7 +123,7 @@
     <section>
 
     </section>
-    
+
     <!-- SIGN UP -->
     <section>
 
@@ -87,24 +135,25 @@
     </footer>
 
     <!-- Modal -->
-     <div>
+    <div>
 
-     </div>
+    </div>
 
-     <!-- Bootstrap Core JavaScript -->
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     <script src="assets/js/jquery-3.7.1.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="assets/js/main.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-     <!-- Typekit Fonts -->
-     <script src="https://use.typekit.net/xqk1qzp.js"></script>
-     <script>
+    <!-- Typekit Fonts -->
+    <script src="https://use.typekit.net/xqk1qzp.js"></script>
+    <script>
         try {
             Typekit.load({ async: true });
         } catch (e) {
             console.log(e);
         }
-     </script>
+    </script>
 </body>
+
 </html>
