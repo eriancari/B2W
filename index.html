@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- Font Awesome Icons -->
-    <link href='assets/css/font-awesome/css/fontawesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- <link href='assets/css/font-awesome/css/fontawesome.min.css' rel='stylesheet' type='text/css'> -->
 
     <!-- Custom CSS -->
     <link href='assets/css/custom.css' rel='stylesheet' type='text/css'>
@@ -25,8 +26,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- Typekit font -->
-    <!-- Unable to download one since the fonts are applied differently in old versions -->
+    
+    <!-- Typekit font: Different font was used instead of proxima nova -- Source Sans Pro -->
+    <link rel="stylesheet" href="https://use.typekit.net/mgc5qmz.css">
 
     <!-- html5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 
@@ -116,7 +118,7 @@
                 </div>
 
                 <div class="col-sm-4">
-					<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+					<button class="btn btn-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#myModal">
 						Click here to subscribe
 					</button>
 				</div> 
@@ -170,25 +172,61 @@
     </footer>
 
     <!-- Modal -->
-    <div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        <i class="fa-solid fa-envelope"></i>
+                        Subscribe to our Mailing List
+                    </h4>
+                    <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button> -->
+                </div>
+                
+                <div class="modal-body">
+                    <p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our best-selling courses, <em>for free!</em></p>
+
+                    <form class="form-inline" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="subscribe-name">Your first name</label>
+							<input type="text" class="form-control" id="subscribe-name">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="subscribe-email">and your email</label>
+							<input type="text" class="form-control" id="subscribe-email">
+						</div>
+                        <br />
+						<button type="submit" class="btn btn-danger">Subscribe!</button>
+					</form>
+					
+					<hr>
+					
+					<p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters. <br>No Spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <!-- Typekit Fonts -->
-    <script src="https://use.typekit.net/xqk1qzp.js"></script>
+    <!-- <script src="https://use.typekit.net/xqk1qzp.js"></script>
     <script>
         try {
             Typekit.load({ async: true });
         } catch (e) {
             console.log(e);
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
