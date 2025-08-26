@@ -187,6 +187,15 @@ section h3 {
 	color: white;
 }
 
+#instructor {
+	background: white url('../img/student.png') 90% -10px no-repeat;
+	background-size: 50% auto; /* keep aspect ratio */
+}
+
+#instructor h2 {
+	margin: 0 0 20px;
+}
+
 /* === CUSTOM ICON SPRITES === */
 
 i.ci {
