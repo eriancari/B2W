@@ -41,37 +41,27 @@
 <body>
     <!-- HEADER -->
     <header class="site-header" role="banner">
-        <!-- NAVBAR -->
+        <!-- NAVBAR (Boostrap v5.3)-->
         <div class="navbar-wrapper">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"><img src="assets/img/logo.png"
-                                alt="Bootstrap to Wordpress"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resources.html">Resources</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
+            </nav>
         </div>
-        </nav>
     </header>
 
     <!-- HERO -->
@@ -89,7 +79,7 @@
                             &amp; Custom WordPress Websites with Bootstrap</p>
                         <div id="price-timeline">
                             <div class="price active">
-                                <h4>Pre-Launch <small>Ends soon!</small></h4>
+                                <h4>Pre-Launch Price <small>Ends soon!</small></h4>
                                 <span>$149</span>
                             </div>
                             <div class="price">
@@ -113,12 +103,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
-                    <p class="lead"><strong>Subscribe to our mail list.</strong> We'll send something special as a thank
-                        you.</p>
+                    <p class="lead">
+                        <strong>Subscribe to our mail list.</strong>
+                        We'll send something special as a thank you.
+                    </p>
                 </div>
 
                 <div class="col-sm-4">
-                    <button class="btn btn-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <button class="btn btn-success btn-lg d-block w-100" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
                         Click here to subscribe
                     </button>
                 </div>
@@ -328,21 +321,21 @@
                     <h3>The Number <small>They Don't Lie</small></h3>
 
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div class="col-4">
                             <div class="num">
                                 <div class="num-content">
                                     41,000+ <span>students</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-4">
                             <div class="num">
                                 <div class="num-content">
                                     568 <span>reviews</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-4">
                             <div class="num">
                                 <div class="num-content">
                                     8 <span>courses</span>
@@ -434,7 +427,7 @@
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
                     <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
-                    <p><a href="" class="btn btn-lg btn-block btn-success">Yes, sign me up!</a></p>
+                    <p><a href="" class="btn btn-lg d-block w-100 btn-success">Yes, sign me up!</a></p>
                 </div>
             </div>
         </div>
@@ -443,22 +436,23 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <p><a href="/"><img src="assets/img/logo.png" alt="Bootstrap to WordPress"></a></p>
+            <div class="row align-items-center">
+                <!-- logo -->
+                <div class="col-md-3">
+                    <p><a href="/"><img src="assets/img/logo.png" class="img-fluid" alt="Bootstrap to WordPress"></a></p>
                 </div>
-                <div class="col-sm-6">
-                    <nav>
-                        <ul class="list-unstyled list-inline">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Resources</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li class="signup-link"><a href="">Sign up now</a></li>
+                <!-- Menu -->
+                <div class="col-md-6 text-center">
+                        <ul class="list-unstyled list-inline mb-0">
+                            <li class="list-inline-item"><a href="">Home</a></li>
+                            <li class="list-inline-item"><a href="">Blog</a></li>
+                            <li class="list-inline-item"><a href="">Resources</a></li>
+                            <li class="list-inline-item"><a href="">Contact</a></li>
+                            <li class="list-inline-item signup-link"><a href="">Sign up now</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3">
                     <p class="pull-right">&copy;2025 Erika Carriedo</p>
                 </div>
             </div>
