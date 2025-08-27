@@ -63,6 +63,37 @@ img {
 	max-width: 100%;
 }
 
+.modal-content{
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+	background: #ccc;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 42px;
+	margin: 0 5px 20px 0;
+	padding: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+
+.badge.social.x:hover {
+	background: #000000;
+}
+
+.badge.social.facebook:hover {
+	background: #3b5998;
+}
+
+.badge.social.instagram:hover {
+	background: #db4b39;
+}
+
 /* ==== HERO ==== */
 
 #hero {
@@ -188,12 +219,40 @@ section h3 {
 }
 
 #instructor {
-	background: white url('../img/student.png') 90% -10px no-repeat;
-	background-size: 50% auto; /* keep aspect ratio */
+	background: white url('../img/student.png') 95% -20px no-repeat;
+	background-size: 35% auto; /* keep aspect ratio */
 }
 
 #instructor h2 {
 	margin: 0 0 20px;
+}
+
+#instructor .num {
+	display: table;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	line-height: 24px;
+	height: 140px;
+	width: 140px;
+	text-align: center;
+	background: #dd5638;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#instructor .num .num-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#instructor .num span {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
 }
 
 /* === CUSTOM ICON SPRITES === */
