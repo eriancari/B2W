@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Blog Post | Bootstrap to Wordpress</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- <link href='assets/css/font-awesome/css/fontawesome.min.css' rel='stylesheet' type='text/css'> -->
+
+    <!-- Custom CSS -->
+    <link href='assets/css/custom.css' rel='stylesheet' type='text/css'>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Typekit font: Different font was used instead of proxima nova -- Source Sans Pro -->
+    <link rel="stylesheet" href="https://use.typekit.net/mgc5qmz.css">
+
+    <!-- html5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <!-- NAVBAR (Boostrap v5.3)-->
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row" id="primary">
+            <div id="content" class="col-sm-8">
+                <article class="post">
+                    <header>
+                        <h1>Blog Title here</h1>
+                        <div class="post-details">
+                            <i class="fa-solid fa-user"></i>Erika Carriedo
+                            <i class="fa-solid fa-clock"></i> &nbsp; <time>August 27, 2025</time>
+                            <i class="fa-solid fa-folder-open"></i> &nbsp; <a href="">Tutorials</a>, <a href="">Coding</a>
+                            <i class="fa-solid fa-tags"></i> &nbsp; Tagged <a href="">wordpress</a>, <a href="">premium</a>, <a
+                                href="">Another tag</a>, <a href="">Yadda yadda</a>
+                            <div class="post-comments-badge">
+                                <a href=""><i class="fa-solid fa-comments"></i> 168</a>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="post-image">
+                        <img src="assets/img/hero-bg.jpg" alt="Hero image">
+                    </div>
+                    <div class="post-body">
+                        <p>Sit ipsum velit enim amet so in. Ipsum exercitationem, and et eius aute natus. Consequat dolorem nemo or accusantium nemo, but suscipit. Culpa lorem. Illum aute. Non voluptatem, eiusmod, rem. Ratione beatae. Proident culpa. Pariatur commodi. Consectetur et id laboriosam but consequatur lorem. Id quam and modi suscipit. Eius fugiat illo for consequat. Ipsum elit. Quasi occaecat veniam dolorem ratione and id commodo.</p>
+                        <p>Nisi. Architecto quo aut velitesse. Quia eos deserunt and ab. Magni laborum and non yet nostrum, for architecto yet nesciunt. Laborum sint so natus and magnam for doloremque for irure anim. Deserunt ullam inventore, for amet and unde but veniam. Fugit velit but nesciunt. Sint commodi adipisci and qui or velit qui. Ipsa omnis corporis aliquam or consectetur. Duis minima but occaecat eius but suscipit. Sed ipsum yet vitae yet est. Voluptas.</p>
+                        <h3>Subtitle</h3>
+                        <p>Sed iure. Quis nequeporro ad amet. Aliquip aperiam or magnam and qui incididunt but occaecat. Vel et reprehenderit so explicabo nemo officia. Corporis consectetur. Sed architecto eius but ipsam but quo, perspiciatis for doloremque. Aperiam quis or voluptas yet veniam.</p>
+                        <h4>Another subtitle</h4>
+                        <p>Officia modi quae. Esse aliquam but adipisci magnam iure est. Mollit natus. Nulla dolore quasi. Velitesse quaerat. Sequi modi. Quae aliquam illo or ut, magni.</p>
+                    </div>
+                </article>
+            </div>
+            <!-- SIDEBAR -->
+            <aside class="col-sm-4">
+
+                <div class="widget">
+                    <h4>Join our Mailing List</h4>
+                    <p>Keep up-to-date with the latest news, and we'll <strong>send you something special as a thank
+                            you!</strong></p>
+                    <button class="btn btn-success btn-lg d-flex w-100" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Click here to Subscribe
+                    </button>
+                </div>
+
+                <div class="widget">
+                    <form role="form" class="search-form">
+                        <label for="sidebar-search" class="sr-only">Search the blog</label>
+                        <input type="text" id="sidebar-search" placeholder="Search the blog...">
+                    </form>
+                </div>
+
+                <div class="widget">
+                    <h4>About Bootstrap to Wordpress</h4>
+                    <p></p>
+                </div>
+
+                <div class="widget">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li><a href="">Blog post #1</a></li>
+                        <li><a href="">Blog post #2</a></li>
+                        <li><a href="">Blog post #3</a></li>
+                        <li><a href="">Blog post #4</a></li>
+                        <li><a href="">Blog post #5</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="">Category #1</a></li>
+                        <li><a href="">Category #2</a></li>
+                        <li><a href="">Category #3</a></li>
+                        <li><a href="">Category #4</a></li>
+                        <li><a href="">Category #5</a></li>
+                        <li><a href="">Category #6</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- SIGN UP -->
+    <section id="signup" data-type="background" data-speed="4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
+                    <p><a href="" class="btn btn-lg d-block w-100 btn-success">Yes, sign me up!</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- logo -->
+                <div class="col-md-3">
+                    <p><a href="/"><img src="assets/img/logo.png" class="img-fluid" alt="Bootstrap to WordPress"></a>
+                    </p>
+                </div>
+                <!-- Menu -->
+                <div class="col-md-6 text-center">
+                    <ul class="list-unstyled list-inline mb-0">
+                        <li class="list-inline-item"><a href="">Home</a></li>
+                        <li class="list-inline-item"><a href="">Blog</a></li>
+                        <li class="list-inline-item"><a href="">Resources</a></li>
+                        <li class="list-inline-item"><a href="">Contact</a></li>
+                        <li class="list-inline-item signup-link"><a href="">Sign up now</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <p class="pull-right">&copy;2025 Erika Carriedo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        <i class="fa-solid fa-envelope"></i>
+                        Subscribe to our Mailing List
+                    </h4>
+                    <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button> -->
+                </div>
+
+                <div class="modal-body">
+                    <p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of
+                        our best-selling courses, <em>for free!</em></p>
+
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-name">Your first name</label>
+                            <input type="text" class="form-control" id="subscribe-name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">and your email</label>
+                            <input type="text" class="form-control" id="subscribe-email">
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-danger">Subscribe!</button>
+                    </form>
+
+                    <hr>
+
+                    <p><small>By providing your email you consent to receiving occasional promotional emails &amp;
+                            newsletters. <br>No Spam. Just good stuff. We respect your privacy &amp; you may unsubscribe
+                            at any time.</small></p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Typekit Fonts -->
+    <!-- <script src="https://use.typekit.net/xqk1qzp.js"></script>
+    <script>
+        try {
+            Typekit.load({ async: true });
+        } catch (e) {
+            console.log(e);
+        }
+    </script> -->
+</body>
+
+</html>
